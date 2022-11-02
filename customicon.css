@@ -1335,5 +1335,30 @@ a[data-ref="大童"]:hover {
   display: inline-block;
   overflow:auto;
 }
-
+/*自定义标签 quicker logseq Quicker Logseq*/
+:is(a[data-ref^="quicker"],.page-title-sizer-wrapper span[data-ref^="quicker"],a[data-ref^="logseq"],.page-title-sizer-wrapper span[data-ref^="logseq"],a[data-ref^="Quicker"],.page-title-sizer-wrapper span[data-ref^="Quicker"],a[data-ref^="Logseq"],.page-title-sizer-wrapper span[data-ref^="Logseq"]){
+  position: relative;
+}
+:is(a[data-ref^="quicker"],.page-title-sizer-wrapper span[data-ref^="quicker"],a[data-ref^="logseq"],.page-title-sizer-wrapper span[data-ref^="logseq"],a[data-ref^="Quicker"],.page-title-sizer-wrapper span[data-ref^="Quicker"],a[data-ref^="Logseq"],.page-title-sizer-wrapper span[data-ref^="Logseq"]):hover{
+  position: relative;
+}
+:is(a[data-ref^="quicker"],.page-title-sizer-wrapper span[data-ref^="quicker"],a[data-ref^="logseq"],.page-title-sizer-wrapper span[data-ref^="logseq"],a[data-ref^="Quicker"],.page-title-sizer-wrapper span[data-ref^="Quicker"],a[data-ref^="Logseq"],.page-title-sizer-wrapper span[data-ref^="Logseq"])::before{
+  content: "\EBCA";
+  font-size: 1em;
+  font-family: 'tabler-icons';
+  color: #217DBA;
+  margin-right: 2px;
+}
+:is([data-ref^="quicker"],[data-ref^="logseq"],[data-ref^="Quicker"],[data-ref^="Logseq"]) > a > span.page-icon {
+  text-indent:-9999px;
+   position: relative;
+  margin-right:var(--pageIconML) !important;
+}
+:is([data-ref^="quicker"],[data-ref^="logseq"],[data-ref^="Quicker"],[data-ref^="Logseq"])>a::before {
+  font-family: 'tabler-icons';
+  font-size: 1.2em;
+  color: #217DBA;
+  content: "\EBCA";
+}
+/*自定义标签 quicker logseq Quicker Logseq*/
 
